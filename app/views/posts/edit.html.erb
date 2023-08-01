@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Editing post</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f1f1f1; margin: 20px;">
+  <h1 style="font-size: 30px; font-weight: bold; color: #007bff; text-align: center;">Editing post</h1>
+  <div style="max-width: 600px; margin: 0 auto; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+    <form>
+      <div class="field">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title">
+      </div>
+      <div class="field">
+        <label for="content">Content:</label><br>
+        <textarea id="content" name="content" rows="2"></textarea>
+      </div>
+      <div class="actions" style="text-align: center;">
+        <input type="submit" value="Save Changes" style="background-color: #007bff; color: #fff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer;">
+      </div>
+    </form>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="<%= post_path(@post) %>" style="text-decoration: none; color: #007bff; background-color: #f9f9f9; padding: 8px 12px; border: 1px solid #007bff; border-radius: 5px; margin-right: 10px;">Show this post</a>
+    <a href="<%= posts_path %>" style="text-decoration: none; color: #4caf50; background-color: #f9f9f9; padding: 8px 12px; border: 1px solid #4caf50; border-radius: 5px;">Back to posts</a>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Post Details</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f1f1f1; padding: 20px;">
+<p style="color: green;"><%= notice %></p>
+<div style="max-width: 800px; margin: 0 auto; background-color: #fff; border: 1px solid #ccc; border-radius: 5px; padding: 20px;">
+<%= render @post %>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+<%= link_to "Edit this post", edit_post_path(@post), style: "text-decoration: none; color: #007bff; padding: 5px 10px; border: 1px solid #007bff; border-radius: 5px; margin-right: 10px;" %>
+<%= link_to "Back to posts", posts_path, style: "text-decoration: none; color: #dc3545; padding: 5px 10px; border: 1px solid #dc3545; border-radius: 5px; margin-right: 10px;" %>
+<%= button_to "Destroy this post", @post, method: :delete, style: "background-color: #dc3545; color: #fff; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;" %>
+</div>
+</body>
+</html>
+
