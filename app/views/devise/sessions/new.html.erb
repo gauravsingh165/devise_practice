@@ -72,6 +72,7 @@
   <h2 style ="text-align: center;">Log in</h2>
 
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+    <%= image_tag('124.jpg', width: '355', height: '200') %>
     <div class="field">
       <%= f.label :email %><br />
       <%= f.email_field :email, autofocus: true, autocomplete: "email" %>

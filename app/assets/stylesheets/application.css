@@ -13,3 +13,13 @@
  *= require_tree .
  *= require_self
  */
+/* app/assets/stylesheets/custom.css.scss */
+
+body {
+    background-image: url('126.jpg'); /* Replace 'background.jpg' with the actual image filename */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  /* app/assets/stylesheets/custom.css */
+
+/* Set the background image */
